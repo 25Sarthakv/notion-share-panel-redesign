@@ -10,9 +10,9 @@ Tells you who can access a page
 
 | Private | Public | Anyone with Link |
 | --- | --- | --- |
-| private to you only | Only you can open this page | "Anyone with edit access can change this page." |
-| open to the whole workspace | Anyone in your workspace can open this page | "Everyone in your workspace can open this page." |
-| open to anyone with the link | Anyone with a link can open this page | "Anyone with this link can open this page, including people outside your workspace." |
+| private to you only | open to the whole workspace | open to anyone with the link  |
+| Only you can open this page  | Anyone in your workspace can open this page | "Everyone in your workspace can open this page." |
+| "Anyone with edit access can change this page." | Anyone with a link can open this page | "Anyone with this link can open this page, including people outside your workspace." |
 
 ## Primary button behaviour
 
