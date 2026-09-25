@@ -27,7 +27,7 @@ no invisible behaviour. if you cannot see it in the panel, do not write it.
 2. Copy Link button is clickable                                                         Y/N
 3. Page URL is placed on the clipboard on clicked                                        Y/N
 4. Copy Link button changes to Copied for only 2s, then Copy Link                        Y/N
-5. Panel shows a line under the copy button reading "Link stops working on date.         Y/N
+5. Panel shows a line under the copy button reading "Link stops working on date."        Y/N
 
 
 ## Live prototype links
