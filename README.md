@@ -8,9 +8,11 @@ Tells you who can access a page
 
 ## Lock states
 
-| Private | Public | Anyone with Link |
-| --- | --- | --- |
-| "Anyone with edit access can change this page." | "Everyone in your workspace can open this page."  | "Anyone with this link can open this page, including people outside your workspace." |
+| State | What it means |
+| --- | --- |
+| Private | "No one can see the page besides anyone with edit access can change this page." |
+| Public | "Everyone in your workspace can open this page." |
+| Anyone with Link | "Anyone with this link can open this page, including people outside your workspace." |
 
 ## Primary button behaviour
 
@@ -18,7 +20,6 @@ Copy link button, on click:
 the page URL is placed on the clipboard, and the button label changes to "Copied" for 2 seconds, then back to "Copy link"
 Expiry, when the user picks an expiry:
 the panel shows a line under the copy button reading "Link stops working on date", using the date chosen
-no invisible behaviour. if you cannot see it in the panel, do not write it.
 
 ## Acceptance checks
 1. 3 Rows are visible                                                                    Y/N
