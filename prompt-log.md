@@ -61,10 +61,7 @@ v0 added a dropdown next to Copy link that isn't in the spec. I sent four follow
 2. "The drop-down works, but anything that should be visible in the drop-down is not visible. It's covered by the edge, so you need to fix that."
    *On screen:* the menu's options are now fully visible. Before, they were cut off at the edge of the card.
 
-3. "Now, when you do the drop-down during the anyone with link, the link expiry and that drop-down kind of coincide. It's not very UI-friendly. Find a way to make it UI-friendly."
-   *On screen:* with Anyone with Link selected, the menu no longer sits on top of the Link expiry field.
-
-4. "You know what? Get rid of the drop-down. We don't need it. Get rid of it."
+3. "You know what? Get rid of the drop-down. We don't need it. Get rid of it."
    *On screen:* the dropdown is gone. The card shows only the three state rows, Copy link and the Link expiry field.
 
 Next time I would add "Do not add any dropdowns or menus" to the first prompt.
