@@ -57,14 +57,17 @@ the link no longer opens the page and shows "This link has expired", the line un
 
 ## Follow-ups
 
-1. "[paste your first follow-up prompt exactly as you sent it]"
-   *On screen:* [one line saying what changed]
+1. "why doesn't the dropdown next to the copy link click?"
+   *Changes:* initialized on-click handler
 
-2. "[paste your second follow-up prompt exactly as you sent it]"
-   *On screen:* [one line saying what changed]
+2. "The drop-down works, but anything that should be visible in the drop-down is not visible. It's covered by the edge, so you need to fix that."
+   *Changes:* removed overflow-hidden
 
-3. "[paste your third follow-up prompt exactly as you sent it]"
-   *On screen:* [one line saying what changed]
+3. "Now, when you do the drop-down during the anyone with link, the link expiry and that drop-down kind of coincide. It's not very UI-friendly. Find a way to make it UI-friendly."
+   *Changes:* dropdown opens without blocking content
+
+4. "You know what? Get rid of the drop-down. We don't need it. Get rid of it."
+   *Changes:* decided dropdown was not important, deleted it.
 
 ## Getting it in front of Lauren
 
@@ -74,6 +77,6 @@ The preview pane in the v0 chat is not a link anyone else can open, and neither 
 
 Taken in a private window while signed out.
 
-![Private](screenshots/01-private.png)
-![Workspace](screenshots/02-workspace.png)
-![Anyone with Link](screenshots/03-anyone-with-link.png)
+   ![Private](01-notion-private.png)
+   ![Workspace](02-notion-public.png)
+   ![Anyone with Link](03-notion-link.png)
