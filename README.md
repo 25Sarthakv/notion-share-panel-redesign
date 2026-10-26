@@ -41,6 +41,8 @@ the link no longer opens the page and shows "This link has expired", the line un
 
 
 ## Live prototype links
+https://notion-share-panel-redesign.vercel.app/
+
 ## Defect table
 ## Comparison scorecard
 ## Recommendation
