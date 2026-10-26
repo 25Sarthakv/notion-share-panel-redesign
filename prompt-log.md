@@ -1,14 +1,10 @@
-# Prompt Session Log, Share Panel (v0 pass)
+# Prompt Session Log, Share Panel (v0)
 
-Notes I kept while generating a throwaway share-panel prototype in v0 from the README, so the next person doesn't burn iterations on a vague first prompt.
-
-## What I needed
-
-Monday 26 October 2026, Lauren Chen is reviewing the Notion share panel build spec and I had nothing clickable to point at, only the README. Throwaway quality was fine: it needs to open in a browser, show all three lock states, and let the reviewer click between them, copy the link and pick an expiry, then it gets thrown away.
+I built a clickable share panel in v0 from this project's README so anyone can click through the three states and check it against the spec.
 
 ## Prompt 1, the paste-in
 
-I pasted the README in as written rather than describing it, with one line added at the top saying I want one share panel screen only. The three state sentences are quoted exactly and the copy link and expiry behaviour is spelled out per state. When I leave the wording open, v0 invents its own copy and then every follow-up is a rewrite. I left out the empty headings at the bottom (prototype links, defect table, scorecard, recommendation) since they aren't part of the build.
+I pasted the README in as written, with one line added at the top: "I want one share panel screen only." I left off the empty headings at the bottom.
 
 ```
 I want one share panel screen only.
@@ -57,26 +53,32 @@ the link no longer opens the page and shows "This link has expired", the line un
 
 ## Follow-ups
 
+v0 added a dropdown next to Copy link that isn't in the spec. I sent four follow-ups, one over the three allowed. The first three tried to fix the dropdown and the fourth deleted it.
+
 1. "why doesn't the dropdown next to the copy link click?"
-   *Changes:* initialized on-click handler
+   *On screen:* clicking the dropdown next to Copy link now opens a menu. Before, nothing happened.
 
 2. "The drop-down works, but anything that should be visible in the drop-down is not visible. It's covered by the edge, so you need to fix that."
-   *Changes:* removed overflow-hidden
+   *On screen:* the menu's options are now fully visible. Before, they were cut off at the edge of the card.
 
 3. "Now, when you do the drop-down during the anyone with link, the link expiry and that drop-down kind of coincide. It's not very UI-friendly. Find a way to make it UI-friendly."
-   *Changes:* dropdown opens without blocking content
+   *On screen:* with Anyone with Link selected, the menu no longer sits on top of the Link expiry field.
 
 4. "You know what? Get rid of the drop-down. We don't need it. Get rid of it."
-   *Changes:* decided dropdown was not important, deleted it.
+   *On screen:* the dropdown is gone. The card shows only the three state rows, Copy link and the Link expiry field.
 
-## Getting it in front of Lauren
+Next time I would add "Do not add any dropdowns or menus" to the first prompt.
 
-The preview pane in the v0 chat is not a link anyone else can open, and neither is the chat or editor URL. I used the **Publish** button, which deploys the project and gives back its own `.vercel.app` address: https://notion-share-panel-redesign.vercel.app/. Before sending it I opened that address in a private browsing window, signed out of everything, and it loaded with no login. I clicked through all three states and took one screenshot of each. I also ran the five acceptance checks from the README against the published address and all five pass.
+## Live link
+
+https://notion-share-panel-redesign.vercel.app/
+
+Published with the Publish button. It opens with no login.
 
 ## Screenshots
 
-Taken in a private window while signed out.
+One per state.
 
-   ![Private](01-notion-private.png)
-   ![Workspace](02-notion-public.png)
-   ![Anyone with Link](03-notion-link.png)
+![Private](01-notion-private.png)
+![Workspace](02-notion-public.png)
+![Anyone with Link](03-notion-link.png)
