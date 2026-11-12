@@ -53,7 +53,7 @@ the link no longer opens the page and shows "This link has expired", the line un
 
 ## Follow-ups
 
-v0 added a dropdown next to Copy link that isn't in the spec. I sent four follow-ups, one over the three allowed. The first three tried to fix the dropdown and the fourth deleted it.
+v0 added a dropdown next to Copy link that isn't in the spec. I sent three follow-ups.
 
 1. "why doesn't the dropdown next to the copy link click?"
    *On screen:* clicking the dropdown next to Copy link now opens a menu. Before, nothing happened.
